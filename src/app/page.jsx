@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { IoMdAdd } from "react-icons/io";
+import fdData from "../../public/fd.json";
 
 const page = async () => {
-    const res = await fetch("http://localhost:3000/fd.json")
-    const fdData = await res.json();
-    console.log(fdData);
+
 
 
     return (
@@ -64,9 +63,9 @@ const page = async () => {
                             <div key={fd.id} className="card bg-base-100 shadow-md py-5 flex items-center justify-center">
                                 <div className="card-body text-center space-y-1">
                                     <Image src={fd.picture} width={80} height={80} className="rounded-full object-cover w-30 h-30 mx-auto" alt="My friends Photos"></Image>
-                                    <p className="text-2xl font-semibold">{fd.name}</p>
+                                    <p className="text-3xl font-semibold">{fd.name}</p>
                                     <p className="text-xl">{fd.days_since_contact}d ago</p>
-                                    <p className="text-xl">{fd.tags.join(", ")}</p>
+                                    <p className="text-xl bg-green-200 p- rounded-2xl">{fd.tags.join(", ")}</p>
                                     <p className="text-xl">{fd.status}</p>
                                 </div>
                             </div>

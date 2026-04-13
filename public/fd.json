@@ -6,7 +6,7 @@
     "email": "arian.hasan01@example.com",
     "days_since_contact": 18,
     "status": "overdue",
-    "tags": ["University of Dhaka", "close friend"],
+    "tags": ["Close friend"],
     "bio": "Met during a university workshop. Very friendly and supportive.",
     "goal": 14,
     "next_due_date": "2026-04-18"
@@ -18,7 +18,7 @@
     "email": "nusrat.jahan02@example.com",
     "days_since_contact": 9,
     "status": "on-track",
-    "tags": ["BRUR", "classmate"],
+    "tags": ["Classmate"],
     "bio": "We know each other from campus events and group study sessions.",
     "goal": 14,
     "next_due_date": "2026-04-23"
@@ -30,7 +30,7 @@
     "email": "tamim.rahman03@example.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": ["Rajshahi University", "friend"],
+    "tags": ["Friend"],
     "bio": "Connected through an inter-university tech competition.",
     "goal": 14,
     "next_due_date": "2026-04-19"
@@ -42,7 +42,7 @@
     "email": "mahi.akter04@example.com",
     "days_since_contact": 21,
     "status": "overdue",
-    "tags": ["Jahangirnagar University", "debate"],
+    "tags": ["Debate"],
     "bio": "Met in a debate-related event and stayed in touch since then.",
     "goal": 14,
     "next_due_date": "2026-04-15"
@@ -54,7 +54,7 @@
     "email": "sabbir.ahmed05@example.com",
     "days_since_contact": 6,
     "status": "on-track",
-    "tags": ["BUET", "tech friend"],
+    "tags": ["Tech friend"],
     "bio": "Known for sharing coding resources and helpful advice.",
     "goal": 14,
     "next_due_date": "2026-04-26"
@@ -66,7 +66,7 @@
     "email": "farzana.islam06@example.com",
     "days_since_contact": 12,
     "status": "almost due",
-    "tags": ["North South University", "club friend"],
+    "tags": ["Club friend"],
     "bio": "Met through a student club and often talk about study plans.",
     "goal": 14,
     "next_due_date": "2026-04-20"
@@ -78,7 +78,7 @@
     "email": "rakib.hossain07@example.com",
     "days_since_contact": 17,
     "status": "overdue",
-    "tags": ["CUET", "project mate"],
+    "tags": ["Project mate"],
     "bio": "Worked together on a small academic project and became friends.",
     "goal": 14,
     "next_due_date": "2026-04-17"
@@ -90,7 +90,7 @@
     "email": "tanjila.noor08@example.com",
     "days_since_contact": 5,
     "status": "on-track",
-    "tags": ["University of Chittagong", "good friend"],
+    "tags": ["Good friend"],
     "bio": "A very positive person who loves volunteering and teamwork.",
     "goal": 14,
     "next_due_date": "2026-04-27"
@@ -102,7 +102,7 @@
     "email": "imran.kabir09@example.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": ["Khulna University", "sports friend"],
+    "tags": ["Sports friend"],
     "bio": "We met through a campus sports event and became close.",
     "goal": 14,
     "next_due_date": "2026-04-19"
@@ -114,7 +114,7 @@
     "email": "sadia.anjum10@example.com",
     "days_since_contact": 20,
     "status": "overdue",
-    "tags": ["Jagannath University", "campus friend"],
+    "tags": ["Campus friend"],
     "bio": "Met at a seminar and kept regular communication for study help.",
     "goal": 14,
     "next_due_date": "2026-04-16"
