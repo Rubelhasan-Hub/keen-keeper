@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const navButtons = [
         {
-            path: "/home",
+            path: "/",
             text: "Home",
             icon: <IoHomeOutline />
         },
