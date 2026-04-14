@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal footer-center bg-green-200 text-base-content rounded p-10">
+        <footer className="footer footer-horizontal footer-center bg-green-200 text-base-content rounded p-10 ">
             <nav className="">
-                <h1 className="text-6xl sm:text-9xl font-bold">KeenKeeper</h1>
-                <p className="text-xl pt-5 sm:text-2xl">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+                <h1 className="text-6xl sm:text-7xl font-bold md:text-9xl">KeenKeeper</h1>
+                <p className="text-md pt-5 sm:text-2xl">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <p className="text-4xl font-bold pt-5 sm:text-3xl">Social Links</p>
             </nav>
             <nav>
@@ -44,11 +44,11 @@ const Footer = () => {
                 </div>
             </nav>
             <hr className="border w-full opacity-35" />
-            <div className="flex justify-around w-full">
+            <div className="flex justify-around w-full  lg:text-xl">
                 <div>
                 <p>© 2026 KeenKeeper. All rights reserved.</p>
                 </div>
-                <div className="flex sm:gap-15">
+                <div className="flex sm:gap-15 ">
                     <p>Privacy</p>
                     <p>Terms of Service  </p>
                     <p> Cookie</p>

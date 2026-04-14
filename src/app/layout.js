@@ -1,16 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Arima } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const arima = Arima({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
 });
 
 export const metadata = {
@@ -23,9 +18,9 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme="light"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`h-full antialiased`}
     >
-      <body className="bg-base-300 min-h-screen text-base-content">
+      <body className={`${arima.className} bg-base-300 min-h-screen text-base-content`}>
         <Navbar />
         {children}
         <Footer />
