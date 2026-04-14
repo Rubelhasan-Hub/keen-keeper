@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const navButtons = [
         {
-            path: "/",
+            path: "/home",
             text: "Home",
             icon: <IoHomeOutline />
         },
@@ -29,13 +29,13 @@ const Navbar = () => {
 
     return (
 
-        <div>
-            <div className="navbar bg-base-100 shadow-sm px-5  sm:px-20 sm:py-4">
+        <div className="sticky top-0 z-50 bg-base-100/10 backdrop-blur-md border-b border-base-300/10">
+            <div className="navbar shadow-sm px-5 sm:px-20 sm:py-4 ">
                 <div className="flex-1">
                     <a className="btn btn-ghost font-bold text-[200%] text-green-300"><span className="text-black">Keen</span>Keeper</a>
                 </div>
                 <div className="flex-none">
-                    <ul className="hidden  menu menu-horizontal px-1 md:flex lg:flex sm:flex gap-4">
+                    <ul className="hidden menu menu-horizontal px-1 md:flex lg:flex sm:flex gap-4">
                         {
                             navButtons.map((item, index) =>
                                 <NavButton key={index} href={item.path} text={item.text} icon={item.icon}></NavButton>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 </div>
             </div>
             {
-                menuBtn && <div className={`sm:hidden flex justify-around bg-gray-100 p-4 absolute top-16 left-0 w-full shadow-md transition-all duration-300 ${menuBtn ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
+                menuBtn && <div className={`bg-base-100/80 sm:hidden flex justify-around p-4 absolute top-16 left-0 w-full shadow-md transition-all duration-300 ${menuBtn ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
                     {
                         navButtons.map((item, index) => (
                             <div key={index}>
