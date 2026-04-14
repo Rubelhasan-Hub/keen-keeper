@@ -6,8 +6,6 @@ import fdData from "../../../public/fd.json";
 
 const page = async () => {
 
-    const fdData = await res.json();
-
     const statusColor = {
         Overdue: "bg-red-300 rounded-2xl py-1 text-[15px] font-bold",
         "On-Track": "bg-green-300 rounded-2xl py-1 text-[15px] font-bold",
