@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { IoMdAdd } from "react-icons/io";;
 import Link from "next/link";
+import fdData from "../../../public/fd.json";
 
 
 const page = async () => {
-    await new Promise(res => setTimeout(res, 200));
-    const res = await fetch("http://localhost:3000/fd.json", {
-        cache: "no-store"
-    })
+
     const fdData = await res.json();
 
     const statusColor = {
