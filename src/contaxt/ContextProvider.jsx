@@ -9,7 +9,6 @@ const ContextProvider = ({children}) => {
     const fdsData = {
         data, setData
     }
-    console.log(data);
     
     return <fdsContext.Provider value={fdsData}>{children}</fdsContext.Provider>
 };

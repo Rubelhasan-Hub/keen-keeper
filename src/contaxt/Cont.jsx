@@ -3,9 +3,7 @@ import { fdsContext } from "@/contaxt/ContextProvider";
 import { use } from "react";
 const Cont = () => {
 
-    const { data } = use(fdsContext)
-
-    console.log(data);
+const { data } = use(fdsContext)
 
     return (
         <div>
