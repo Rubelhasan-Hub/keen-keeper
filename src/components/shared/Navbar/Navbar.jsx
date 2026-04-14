@@ -5,6 +5,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import NavButton from "./NavButton";
 import { TiThMenu } from "react-icons/ti";
 import { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
 
@@ -32,7 +33,7 @@ const Navbar = () => {
         <div className="sticky top-0 z-50 bg-base-100/10 backdrop-blur-md border-b border-base-300/10">
             <div className="navbar shadow-sm px-5 sm:px-20 sm:py-4 ">
                 <div className="flex-1">
-                    <a className="btn btn-ghost font-bold text-[200%] text-green-300"><span className="text-black">Keen</span>Keeper</a>
+                    <Link href='/' className="btn btn-ghost font-bold text-[200%] text-green-300"><span className="text-black">Keen</span>Keeper</Link>
                 </div>
                 <div className="flex-none">
                     <ul className="hidden menu menu-horizontal px-1 md:flex lg:flex sm:flex gap-4">

@@ -2,6 +2,7 @@ import { Arima } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
+import ContextProvider from '@/contaxt/ContextProvider';
 
 const arima = Arima({
   subsets: ['latin'],
@@ -22,7 +23,9 @@ export default function RootLayout({ children }) {
     >
       <body className={`${arima.className} bg-base-300 min-h-screen text-base-content`}>
         <Navbar />
-        {children}
+        <ContextProvider>
+          {children}
+        </ContextProvider>
         <Footer />
       </body>
     </html>

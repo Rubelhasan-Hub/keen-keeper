@@ -1,10 +1,13 @@
+"use client"
 
-const page = () => {
+import Cont from "@/contaxt/Cont";
+
+const Page = () => {
     return (
         <div>
-            <h1 className="text-4xl">Timeline</h1>            
+            <Cont></Cont>
         </div>
     );
 };
 
-export default page;
+export default Page;
