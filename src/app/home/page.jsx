@@ -1,11 +1,14 @@
 import Image from "next/image";
 import { IoMdAdd } from "react-icons/io";;
 import Link from "next/link";
-import { use } from "react";
-import fdData from "../../../public/fd.json"
+
 
 const page = async () => {
-
+    await new Promise(res => setTimeout(res, 200));
+    const res = await fetch("http://localhost:3000/fd.json", {
+        cache: "no-store"
+    })
+    const fdData = await res.json();
 
     const statusColor = {
         Overdue: "bg-red-300 rounded-2xl py-1 text-[15px] font-bold",
