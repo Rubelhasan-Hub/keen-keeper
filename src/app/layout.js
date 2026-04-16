@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           {children}
         </ContextProvider>
         <Footer />
-        <ToastContainer position="top-left"/>
+        <ToastContainer position="bottom-left"/>
       </body>
     </html>
   );

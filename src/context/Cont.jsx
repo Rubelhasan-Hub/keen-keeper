@@ -8,7 +8,7 @@ const Cont = () => {
     
 
     return (
-        <div className="space-y-5 m-15">
+        <div className="space-y-5 mb-10 mt-10 sm:m-15">
             <h1 className="text-5xl font-bold">TimeLine </h1>
             <select onChange={(e) => setFilter(e.target.value)} defaultValue="All" className="select select-success text-2xl font-bold">
                 <option>All</option>

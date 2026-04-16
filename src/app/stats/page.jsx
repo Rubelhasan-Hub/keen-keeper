@@ -21,7 +21,7 @@ const StatsPage = () => {
     ]
 
     return (
-        <div className='mt-10 mb-10 max-w-10/12 mx-auto p-10 space-y-10'>
+        <div className='mt-30 mb-30 sm:mt-10 sm:mb-10 sm:max-w-10/12 mx-auto sm:p-10 space-y-10'>
             <h1 className='text-4xl font-bold'>Friendship Analytics</h1>
 
             <div className='bg-white p-15 rounded-2xl flex flex-col justify-center items-center gap-10'>
