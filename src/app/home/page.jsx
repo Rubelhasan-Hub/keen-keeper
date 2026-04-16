@@ -4,7 +4,7 @@ import Link from "next/link";
 import fdData from "../../../public/fd.json";
 
 
-const page = async () => {
+const page = () => {
 
     const statusColor = {
         Overdue: "bg-red-300 rounded-2xl py-1 text-[15px] font-bold",
@@ -58,8 +58,7 @@ const page = async () => {
                 <div>
                     <h1 className="text-4xl font-bold pb-4">Your Friends :</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-4 md:grid-cols-2 pt-20 sm:gap-5 lg:grid-cols-3 lg:gap-7 xl:grid-cols-4">
-
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pt-20 sm:gap-5 lg:grid-cols-3 lg:gap-7 xl:grid-cols-4">
 
                     {
                         fdData.map((fd) => (
@@ -74,7 +73,6 @@ const page = async () => {
                                     </div>
                                 </div>
                             </Link>
-
                         ))
                     }
                 </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import Cont from "@/contaxt/Cont";
+import Cont from "@/context/Cont";
 
 const Page = () => {
     return (

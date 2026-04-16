@@ -1,11 +1,12 @@
 "use client"
-import { ImStatsDots } from "react-icons/im";
+import { ImCancelCircle, ImStatsDots } from "react-icons/im";
 import { IoMdTime } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import NavButton from "./NavButton";
 import { TiThMenu } from "react-icons/ti";
 import { useState } from "react";
 import Link from "next/link";
+import { CgCloseR } from "react-icons/cg";
 
 const Navbar = () => {
 
@@ -45,7 +46,11 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="sm:hidden">
-                    <button className="btn" onClick={() => setMenuBtn(!menuBtn)}><TiThMenu /></button>
+                    <button className="btn" onClick={() => setMenuBtn(!menuBtn)}>
+                        {
+                            menuBtn ?<ImCancelCircle /> :   <TiThMenu />
+                        }
+                    </button>
                 </div>
             </div>
             {

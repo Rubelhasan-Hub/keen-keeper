@@ -1,5 +1,5 @@
 import Buttons from "@/components/shared/Button.jsx/Buttons";
-import Cont from "@/contaxt/Cont";
+import Cont from "@/context/Cont";
 import { Content } from "next/font/google";
 import Image from "next/image";
 import { BiPhoneCall } from "react-icons/bi";
@@ -103,12 +103,13 @@ const FdDetails = async ({ params }) => {
 
                         <div className="flex gap-5 lg:gap-7 xl:gap-15 justify-center pt-5">
                             <Buttons fdsData={fd}/>
+                            
                         </div>
                     </div>
 
 
                     {/* History */}
-                    <div className="card bg-base-100 shadow-md transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+                    {/* <div className="card bg-base-100 shadow-md transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
                         <div className="font-bold text-2xl p-7 space-y-4">
                             <div className="flex justify-between items-center">
                                 <div><h1>Relationship Goal</h1></div>
@@ -116,7 +117,7 @@ const FdDetails = async ({ params }) => {
                             </div>
                             <Cont></Cont>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

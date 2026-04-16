@@ -2,7 +2,8 @@ import { Arima } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
-import ContextProvider from '@/contaxt/ContextProvider';
+import ContextProvider from '@/context/ContextProvider';
+import { ToastContainer } from 'react-toastify';
 
 const arima = Arima({
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
           {children}
         </ContextProvider>
         <Footer />
+        <ToastContainer position="top-left"/>
       </body>
     </html>
   );
