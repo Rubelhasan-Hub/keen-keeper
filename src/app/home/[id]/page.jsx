@@ -1,16 +1,22 @@
 import Buttons from "@/components/shared/Button.jsx/Buttons";
-import Cont from "@/context/Cont";
-import { Content } from "next/font/google";
 import Image from "next/image";
-import { BsArchive, BsChatSquareText } from "react-icons/bs";
+import { BsArchive} from "react-icons/bs";
 import { MdOutlineNotificationsActive, MdVideoCall } from "react-icons/md";
 import { RiDeleteBin4Line } from "react-icons/ri";
 
 
-const FdDetails = async ({ params }) => {
+const fdDataPromise = async function () {
     const res = await fetch("http://localhost:3000/fd.json", { cache: "no-store" }
     );
-    const fdData = await res.json();
+    const data = await res.json();
+    return data;
+}
+
+
+
+const FdDetails = async ({ params }) => {
+
+    const fdData = await fdDataPromise()
     const { id } = await params
     const fd = fdData.find((f) => f.id == id)
 

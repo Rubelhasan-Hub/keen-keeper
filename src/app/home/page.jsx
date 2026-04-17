@@ -2,11 +2,15 @@ import Image from "next/image";
 import { IoMdAdd } from "react-icons/io";;
 import Link from "next/link";
 
-
-const page = async() => {
-    const res = await fetch("http://localhost:3000/fd.json",{ cache: "no-store" }
+const fdDataPromise = async function () {
+    const res = await fetch("http://localhost:3000/fd.json", { cache: "no-store" }
     );
-    const fdData = await res.json();
+    const data = await res.json();
+    return data;
+}
+const page = async() => {
+
+const fdData = await fdDataPromise()
 
 
 
