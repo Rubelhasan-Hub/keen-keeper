@@ -5,7 +5,7 @@ const Cont = () => {
 
     const { data } = use(fdsContext)
     const [filter, setFilter] = useState("All");
-    
+
 
     return (
         <div className="space-y-5 mb-10 mt-10 sm:m-15">
@@ -30,6 +30,7 @@ const Cont = () => {
                         <div>
                             <h1 className="text-2xl font-bold">{item.friend.name}</h1>
                             <h1 className="text-2xl font-semibold">{item.action}</h1>
+                            <p>{item.time}</p>
                         </div>
                     </div>)
             })}

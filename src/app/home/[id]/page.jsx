@@ -2,10 +2,7 @@ import Buttons from "@/components/shared/Button.jsx/Buttons";
 import Cont from "@/context/Cont";
 import { Content } from "next/font/google";
 import Image from "next/image";
-import { BiPhoneCall } from "react-icons/bi";
 import { BsArchive, BsChatSquareText } from "react-icons/bs";
-import { FaHistory } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
 import { MdOutlineNotificationsActive, MdVideoCall } from "react-icons/md";
 import { RiDeleteBin4Line } from "react-icons/ri";
 import fdData from '../../../../public/fd.json'
@@ -101,13 +98,10 @@ const FdDetails = async ({ params }) => {
                     <div className="card bg-base-100 shadow-md transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl p-7">
                         <p className="text-2xl font-semibold">Quick Check-In</p>
 
-                        <div className="flex gap-5 lg:gap-7 xl:gap-15 justify-center pt-5">
+                        <div className="flex gap-5 lg:gap-7 xl:gap-10 justify-center pt-5">
                             <Buttons fdsData={fd}/>
-                            
                         </div>
                     </div>
-
-
                     {/* History */}
                     {/* <div className="card bg-base-100 shadow-md transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
                         <div className="font-bold text-2xl p-7 space-y-4">

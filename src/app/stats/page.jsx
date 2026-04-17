@@ -3,8 +3,6 @@ import { fdsContext } from "@/context/ContextProvider";
 import { use } from 'react';
 import { Legend, Pie, PieChart, Tooltip } from 'recharts';
 
-
-
 const StatsPage = () => {
     const { data } = use(fdsContext)
     console.log(data);
@@ -18,8 +16,7 @@ const StatsPage = () => {
         { name: "Call", value: callCount, fill: "green" },
         { name: "Text", value: textCount, fill: "black" },
         { name: "Video Call", value: videoCallCount, fill: "purple" },
-    ]
-
+    ];
     return (
         <div className='mt-30 mb-30 sm:mt-10 sm:mb-10 sm:max-w-10/12 mx-auto sm:p-10 space-y-10'>
             <h1 className='text-4xl font-bold'>Friendship Analytics</h1>

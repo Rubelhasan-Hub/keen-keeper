@@ -1,7 +1,7 @@
 "use client"
 import React, { createContext, useState } from 'react';
 
-export const fdsContext = createContext(null)
+export const fdsContext = createContext([])
 
 const ContextProvider = ({children}) => {
 
@@ -9,7 +9,6 @@ const ContextProvider = ({children}) => {
     const fdsData = {
         data, setData
     }
-    
     return <fdsContext.Provider value={fdsData}>{children}</fdsContext.Provider>
 };
 
