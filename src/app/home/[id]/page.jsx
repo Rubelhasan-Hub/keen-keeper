@@ -1,22 +1,18 @@
 import Buttons from "@/components/shared/Button.jsx/Buttons";
 import Image from "next/image";
-import { BsArchive} from "react-icons/bs";
+import { BsArchive } from "react-icons/bs";
 import { MdOutlineNotificationsActive, MdVideoCall } from "react-icons/md";
 import { RiDeleteBin4Line } from "react-icons/ri";
 
-
-const fdDataPromise = async function () {
-    const res = await fetch("http://localhost:3000/fd.json", { cache: "no-store" }
-    );
-    const data = await res.json();
-    return data;
-}
 
 
 
 const FdDetails = async ({ params }) => {
 
-    const fdData = await fdDataPromise()
+    const res = await fetch("https://keen-keeper-ashen.vercel.app/fd.json", { cache: "no-store" })
+    const fdData = await res.json();
+
+
     const { id } = await params
     const fd = fdData.find((f) => f.id == id)
 
@@ -71,7 +67,7 @@ const FdDetails = async ({ params }) => {
                         </div>
 
 
-
+                        
                         <div className="card bg-base-100 shadow-md py-5 flex items-center justify-center transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
                             <div className="flex flex-col font-bold text-2xl gap-4 items-center justify-center">
                                 <h1 className="text-5xl">{fd.goal}</h1>
@@ -107,7 +103,7 @@ const FdDetails = async ({ params }) => {
                         <p className="text-2xl font-semibold">Quick Check-In</p>
 
                         <div className="flex gap-5 lg:gap-7 xl:gap-10 justify-center pt-5">
-                            <Buttons fdsData={fd} />
+                            <Buttons fdsData={fd}/>
                         </div>
                     </div>
                     {/* History */}
