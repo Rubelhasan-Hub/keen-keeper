@@ -17,19 +17,19 @@ const Buttons = ({ fdsData }) => {
 
     return <>
         <div onClick={() => setData((data) => [...data, { friend: fdsData, action: "Call" , icon: <BiPhoneCall /> , time: currentTime}], notify())
-        } className="btn text-2xl p-6 lg:p-8 xl:p-[5%] xl:text-6xl lg:text-2xl bg-green-300">
+        } className="btn text-xl p-3 lg:p-8 xl:p-[5%] xl:text-6xl lg:text-2xl bg-green-300">
             <BiPhoneCall />
-            <p className="text-3xl lg:text-2xl xl:text-[30px] font-semibold">Call</p>
+            <p className="text-xl lg:text-2xl xl:text-[30px] font-semibold">Call</p>
         </div >
         <div onClick={() => setData((data) => [...data, { friend: fdsData, action: "Text" , icon: <BsChatSquareText />, time: currentTime}], notify2())
-        } className="btn text-2xl p-6 lg:p-8 xl:p-[5%] xl:text-[30px] lg:text-2xl bg-blue-300">
+        } className="btn text-xl p-3 lg:p-8 xl:p-[5%] xl:text-[30px] lg:text-2xl bg-blue-300">
             <BsChatSquareText />
-            <p className="text-3xl  lg:text-2xl xl:text-5xl font-semibold">Text</p>
+            <p className="text-xl  lg:text-2xl xl:text-5xl font-semibold">Text</p>
         </div>
         <div onClick={() => setData((data) => [...data, { friend: fdsData, action: "Video Call" ,icon: <MdVideoCall /> , time: currentTime}], notify3())
-        } className="btn text-2xl p-6 lg:p-8 xl:p-[5%] xl:text-6xl lg:text-2xl bg-purple-300">
+        } className="btn text-xl p-3 lg:p-8 xl:p-[5%] xl:text-6xl lg:text-2xl bg-purple-300">
             <MdVideoCall />
-            <p className="text-3xl  lg:text-2xl xl:text-[30px] font-semibold">Video</p>
+            <p className="text-xl  lg:text-2xl xl:text-[30px] font-semibold">Video</p>
         </div>
 
     </>

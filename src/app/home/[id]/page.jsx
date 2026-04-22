@@ -102,7 +102,7 @@ const FdDetails = async ({ params }) => {
                     <div className="card bg-base-100 shadow-md transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl p-7">
                         <p className="text-2xl font-semibold">Quick Check-In</p>
 
-                        <div className="flex gap-5 lg:gap-7 xl:gap-10 justify-center pt-5">
+                        <div className="flex gap-2 lg:gap-7 xl:gap-10 justify-center pt-5">
                             <Buttons fdsData={fd}/>
                         </div>
                     </div>
